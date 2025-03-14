@@ -11,8 +11,11 @@
             box-sizing: border-box;
         }
         
-        body {
+        html, body {
+            height: auto;
+            overflow-y: auto;
             font-family: Arial, sans-serif;
+            -webkit-overflow-scrolling: touch;
         }
         
         .container {
@@ -20,6 +23,7 @@
             max-width: 1200px;
             margin: 20px auto;
             padding: 0 15px;
+            overflow-y: visible;
         }
         
         .embed-container {
@@ -60,5 +64,8 @@
             <iframe loading="lazy" src="https://www.canva.com/design/DAGhCB1iLS4/UxsgBj69yCSqo7hID1f91g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
         </div>
     </div>
+    
+    <!-- 確保頁面可滾動的額外空間 -->
+    <div style="height: 50px;"></div>
 </body>
 </html>
